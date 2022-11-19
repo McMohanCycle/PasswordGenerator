@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #1f2937;
+}
+
+main.light-mode {
+  background: #ecfdf5;
+}
+
+/* Fonts and Labels */
+#dark-mode-h4 {
+  margin: 1rem 1rem 0 0;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.heading-h1 {
+  color: #4adf86;
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+}
+
+h4,
+.heading-h1 span {
+  color: #ffffff;
+}
+
+p {
+  color: #d5d4d8;
+}
+
+span.light-mode,
+h4.light-mode {
+  color: #2b283a;
+}
+
+p.light-mode {
+  color: #6b7280;
+}
+
+h4 {
+  margin: 2rem 0 1rem 0;
+}
+
+#passwordLengthH4 {
+  margin: 0;
+  margin-left: auto;
+}
+
+.password-limit-p {
+  margin: 0 0.5rem;
+}
+
+.generated-password-p {
+  margin: 0;
+  text-align: center;
+  color: #55f991;
+}
+
+#reset-h4 {
+  cursor: pointer;
+  text-align: center;
+}
+
+footer {
+  align-self: center;
+}
+
+/* Divs & Components */
+
+.container {
+  margin: auto;
+}
+
+.input-wrapper {
+  display: flex;
+}
+
+#password-length {
+  cursor: pointer;
+}
+
+#cta-btn {
+  background: #10b981;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 1rem 1.5rem;
+  margin: 2rem 0 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.separator {
+  height: 0.1rem;
+  width: 100%;
+  background: #2f3e53;
+  margin: 2rem 0;
+}
+
+.light-mode .separator {
+  background: #d5d4d8;
+}
+
+.generated-password {
+  background: #273549;
+  padding: 0.5rem 1rem;
+  height: 1.2rem;
+  margin-bottom: 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.reset-hidden {
+  display: none;
+}

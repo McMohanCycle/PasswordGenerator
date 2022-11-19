@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gaurav's Password Generator</title>
+  </head>
+  <body>
+    <main>
+      <h4 id="dark-mode-h4" onclick="toggleDarkMode()">Toggle dark mode</h4>
+      <div class="container">
+        <div class="heading">
+          <h1 class="heading-h1">
+            <span>Generate a</span><br />random password
+          </h1>
+          <p class="heading-p">Never use an insecure password again.</p>
+        </div>
+        <h4 class="label-h4">Password Length</h4>
+        <div class="input-wrapper">
+          <input
+            type="range"
+            name="length"
+            id="password-length"
+            min="8"
+            max="24"
+            value="15"
+            step="1"
+            oninput="passwordLengthH4.textContent=this.value"
+          />
+          <h4 id="passwordLengthH4">15</h4>
+        </div>
+        <button id="cta-btn" onclick="generatePassword()">
+          Generate Passwords
+        </button>
+        <div class="separator"></div>
+        <div class="password-wrapper">
+          <div class="generated-password" title="Click to copy">
+            <p
+              class="generated-password-p"
+              id="password-left"
+              onclick="copyPassword(false)"
+            ></p>
+          </div>
+          <div class="generated-password" title="Click to copy">
+            <p
+              class="generated-password-p"
+              id="password-right"
+              onclick="copyPassword(true)"
+            ></p>
+          </div>
+        </div>
+        <h4 class="reset-hidden" id="reset-h4" onclick="resetPassword()">
+          Reset
+        </h4>
+      </div>
+      <footer><h4 class="footer-h4">Made by Gaurav</h4></footer>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
